@@ -1,0 +1,17 @@
+<div  class="panel panel-primary">
+    <div class="panel-heading">测试生命周期钩子</div>
+    <div class="panel-body">
+      <ul>
+        <li *ngFor="let item of logs; let i = index">
+          {{i}}--{{item}}
+        </li>
+      </ul>
+
+      <div>{{str}}</div>
+    </div>
+    <div class="panel-footer">
+      <!-- <button class="btn btn-danger" (click)="flowemit()">flowemit</button>
+      <button class="btn btn-danger" (click)="writeLocalstorage()">写参数</button>-->
+      <button class="btn btn-danger" (click)="doDestory()">销毁</button> 
+    </div>
+  </div>

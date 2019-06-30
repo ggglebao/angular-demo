@@ -1,0 +1,10 @@
+<div [ngClass]="{'panel panel-success': color, 'panel panel-primary': !color}">
+    <div class="panel-heading">father</div>
+    <div class="panel-body">
+      <son #son title="我的儿子" (follow)="doSomeThing($event)"></son>
+      <button class="btn btn-success" (click)="son.getSonName()">sayhello</button>
+      <brother #brother title="弟弟" (follow)="doSomeThing($event)"></brother>
+    </div>
+    <div class="panel-footer">
+    </div>
+  </div>

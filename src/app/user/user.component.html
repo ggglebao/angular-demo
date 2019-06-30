@@ -1,0 +1,22 @@
+<p>
+  user works!
+</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">{{title}}</div>
+  <div class="panel-body">
+    <!-- {{sayhello()}} -->
+    <!-- <p>1+1 = {{1+2 - 10%31}}</p>
+    <input #heroInput>
+    <p>{{heroInput.value}}</p>
+    <button class="btn btn-success" (click)="sayHello(heroInput.value)">局部变量</button> -->
+
+    <img [src]="imageSrc">
+    <button  class="btn btn-success" (click)="changeImg()">changeImg</button>
+
+    <input [(ngModel)]="currentRace.name">
+  </div>
+  <div class="panel-footer">
+    <button class="btn btn-success">成功</button>
+    <button class="btn btn-danger">失败</button>
+  </div>
+</div>

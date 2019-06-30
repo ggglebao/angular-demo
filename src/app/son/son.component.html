@@ -1,0 +1,10 @@
+<div *ngIf="sonIsShow" class="panel panel-primary">
+    <div class="panel-heading">{{title}}</div>
+    <div class="panel-body">
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-danger" (click)="flowemit()">flowemit</button>
+      <button class="btn btn-danger" (click)="writeLocalstorage()">写参数</button>
+      <button class="btn btn-danger" (click)="triggerEventBus()">eventBus</button>
+    </div>
+  </div>
